@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c68abeb3.js",
+    "static/js/787.62e019a0.chunk.js": "/static/js/787.62e019a0.chunk.js",
+    "static/media/csm-min.png": "/static/media/csm-min.98fc5686da0e9cd7e13c.png",
+    "static/media/tft_db_2-min.png": "/static/media/tft_db_2-min.6ef1f6e902060d569b49.png",
+    "static/media/csm_3-min.png": "/static/media/csm_3-min.c02e2f3c3858b569acfd.png",
+    "static/media/semester_project-min.png": "/static/media/semester_project-min.4320fd1af68ec50bdc31.png",
+    "static/media/tft_db-min.png": "/static/media/tft_db-min.aa19c5f8747e310eeea1.png",
+    "static/media/csm_2-min.png": "/static/media/csm_2-min.5a442c47871b015a064d.png",
+    "static/media/RGG_CV_22_F.pdf": "/static/media/RGG_CV_22_F.24f0ace4037858497eb6.pdf",
+    "static/media/semester_project_2-min.png": "/static/media/semester_project_2-min.5ebaff570a51ce38154d.png",
+    "static/media/profile_pic.png": "/static/media/profile_pic.f5ba0feae07f7823b227.png",
+    "static/media/semester_project_3-min.png": "/static/media/semester_project_3-min.4a60736883a0a2469b68.png",
+    "static/media/dice_game-min.png": "/static/media/dice_game-min.be6efb5296068a30f970.png",
+    "index.html": "/index.html",
+    "main.c68abeb3.js.map": "/static/js/main.c68abeb3.js.map",
+    "787.62e019a0.chunk.js.map": "/static/js/787.62e019a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c68abeb3.js"
+  ]
+}
