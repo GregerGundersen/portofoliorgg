@@ -21,6 +21,7 @@ const Header = () => {
       bg={bgColor}
       w="100vw"
       h="100px"
+      my="200px"
       justify="space-between"
       align="center"
       initial={{ y: -120 }}

@@ -35,6 +35,8 @@ import csm3 from "../../media/projects/csm_3-min.png";
 import semesterProj from "../../media/projects/semester_project-min.png";
 import semesterProj2 from "../../media/projects/semester_project_2-min.png";
 import semesterProj3 from "../../media/projects/semester_project_3-min.png";
+import projectExam2 from "../../media/projects/Project_exam_2.png";
+import jsfca from "../../media/projects/jsfca.png";
 
 const Projects = () => {
   const {
@@ -57,6 +59,16 @@ const Projects = () => {
     onOpen: onSmOpen,
     onClose: onSmClose,
   } = useDisclosure({ id: "sm" });
+  const {
+    isOpen: isPeOpen,
+    onOpen: onPeOpen,
+    onClose: onPeClose,
+  } = useDisclosure({ id: "Pe" });
+  const {
+    isOpen: isJSFCAOpen,
+    onOpen: onJSFCAOpen,
+    onClose: onJSFCAClose,
+  } = useDisclosure({ id: "JSFCA" });
 
   return (
     <ProjectsStyled
@@ -141,8 +153,38 @@ const Projects = () => {
               <Image src={semesterProj} />
             </Box>
             <Box className="text">
-              <Text>Community Science Museum</Text>
+              <Text>Semester Project</Text>
               <Text>HTML / SCSS / JS</Text>
+            </Box>
+          </Box>
+          <Box
+            className="cardCont"
+            h="300px"
+            w="390px"
+            onClick={onPeOpen}
+            cursor="pointer"
+          >
+            <Box h="300px" className="card">
+              <Image src={projectExam2} />
+            </Box>
+            <Box className="text">
+              <Text>Project Exam 2</Text>
+              <Text>React / Styled Components / Strapi</Text>
+            </Box>
+          </Box>
+          <Box
+            className="cardCont"
+            h="300px"
+            w="390px"
+            onClick={onJSFCAOpen}
+            cursor="pointer"
+          >
+            <Box h="300px" className="card">
+              <Image src={jsfca} />
+            </Box>
+            <Box className="text">
+              <Text>Javascript Frameworks CA</Text>
+              <Text>Next</Text>
             </Box>
           </Box>
         </Flex>
@@ -278,6 +320,92 @@ const Projects = () => {
                 ml="5"
               >
                 <HiExternalLink size="32" />
+              </Link>
+            </Flex>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+      <Modal
+        motionPreset="slideInBottom"
+        isOpen={isDiceOpen}
+        onClose={onDiceClose}
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <SimpleSlider img1={diceGame} />
+          <ModalHeader>Dice Game</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              A simple dice game where each play rolls their dice and the first
+              one to 20 is the winner! Made using React to practice some simple
+              JS logic and React Hooks
+            </Text>
+            <Flex mt="5">
+              <Link
+                isExternal
+                href="https://github.com/GregerGundersen/dicegame"
+              >
+                <AiFillGithub size="30" />
+              </Link>
+              <Link
+                isExternal
+                href="https://elated-khorana-6b9758.netlify.app/"
+                ml="5"
+              >
+                <HiExternalLink size="32" />
+              </Link>
+            </Flex>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+      <Modal motionPreset="slideInBottom" isOpen={isPeOpen} onClose={onPeClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <SimpleSlider
+            img1={projectExam2}
+            img2={projectExam2}
+            img3={projectExam2}
+          />
+          <ModalHeader>Project Exam 2</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              This site was made for the project exam in my final year at
+              Noroff. It includes responsive design and many features.
+            </Text>
+            <Flex mt="5">
+              <Link
+                isExternal
+                href="https://github.com/GregerGundersen/projectexam2"
+              >
+                <AiFillGithub size="30" />
+              </Link>
+            </Flex>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+      <Modal
+        motionPreset="slideInBottom"
+        isOpen={isJSFCAOpen}
+        onClose={onJSFCAClose}
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <SimpleSlider img1={jsfca} img2={jsfca} img3={jsfca} />
+          <ModalHeader>Project Exam 2</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Text>
+              This site was made for the project exam in my final year at
+              Noroff. It includes responsive design and many features.
+            </Text>
+            <Flex mt="5">
+              <Link
+                isExternal
+                href="https://github.com/GregerGundersen/projectexam2"
+              >
+                <AiFillGithub size="30" />
               </Link>
             </Flex>
           </ModalBody>

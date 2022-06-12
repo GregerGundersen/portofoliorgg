@@ -18,7 +18,6 @@ const App = ({ Component, pageProps }) => {
         <AnimatePresence exitBeforeEnter={true}>
           <Router>
             <DarkModeSwitch />
-            {/* <Header /> */}
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/about" element={<AboutMe />} />
